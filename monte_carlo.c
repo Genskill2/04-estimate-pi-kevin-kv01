@@ -48,7 +48,7 @@ float mc_pi(int n)
     y=frandom();
     z=x*x+y*y;
     if(z<=1){
-      a=a+1;
+      a++;
     }
   }
   float pi =4*a/b;
