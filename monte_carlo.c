@@ -9,18 +9,18 @@ float frandom() {
   return ret;
 }
 float mc_pi(int n){
-int pc=0,ps=n;
+int a=0,b=n;
 	
 	for(int i=0; i<n; i++){
-	float x,y,len;
+	float x,y,z;
 	x=frandom();
 	y=frandom();
-	len =x*x+y*y;
-	if(len<=1){
-	pc++;
+	z =x*x+y*y;
+	if(z<=1){
+	a++;
 	}
 	}
-	float pi = 4.0*pc/ps;
+	float pi = 4.0*a/b;
 	return pi;
 }
 
