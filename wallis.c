@@ -29,10 +29,10 @@ float wallis_pi(int n)
 float x=1.0;
 for(int i=1; i<=n; i++)
 {
-float y=(4.0*i*i)/((4.0*i*i)-1);
+float y=(float)(4.0*i*i)/((4.0*i*i)-1);
 x=x*y;
 }
-x=2*x;
+x=x*2;
 return x;
 }
 
