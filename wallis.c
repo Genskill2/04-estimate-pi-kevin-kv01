@@ -26,14 +26,13 @@ int main(void) {
 
 float wallis_pi(int n) 
 {
-float pi;
-  float x=1;
+float x=1.0;
 for(int i=1; i<=n; i++)
 {
 float y=(4.0*i*i)/((4.0*i*i)-1);
 x=x*y;
 }
-pi=2*x;
-return pi;
+x=2*x;
+return x;
 }
 
